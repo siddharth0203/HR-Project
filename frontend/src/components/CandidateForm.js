@@ -64,7 +64,7 @@ function CandidateForm({ candidate, refresh, clearSelection }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>{candidate ? "Edit Candidate" : "Add Candidate"}</h3>
+      <h3>{candidate ? "Update Candidate" : "Add Candidate"}</h3>
       <input
         type="number"
         name="id"

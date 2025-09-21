@@ -69,7 +69,7 @@ function CandidateList() {
               </td>
               <td>
                 <a href={c.resume_link} target="_blank" rel="noreferrer">
-                  View Resume
+                  {c.resume_link}
                 </a>
               </td>
               <td>
