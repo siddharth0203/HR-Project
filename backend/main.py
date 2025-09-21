@@ -8,7 +8,6 @@ import database_models
 database_models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-
 # CORS for React dev server
 app.add_middleware(
     CORSMiddleware,
@@ -17,7 +16,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 def get_db():
     db = SessionLocal()
     try:
